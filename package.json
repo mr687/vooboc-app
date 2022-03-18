@@ -7,11 +7,11 @@
     "node": "16.14.0"
   },
   "scripts": {
-    "start": "node ./dist/index.js",
-    "dev": "yarn build && yarn start",
+    "start": "npm run build & node ./dist/index.js",
+    "dev": "npm run build && npm run start",
     "build": "tsc",
     "watch": "ts-node-dev --transpile-only --respawn --cls './src/index.ts'",
-    "register": "yarn build && node ./dist/register.js"
+    "register": "npm run build && node ./dist/register.js"
   },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
